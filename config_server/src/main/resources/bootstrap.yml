@@ -1,0 +1,9 @@
+server:
+  port: 7001
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wuxinyuwxy/o2o_project
+          search-paths: config-repo
