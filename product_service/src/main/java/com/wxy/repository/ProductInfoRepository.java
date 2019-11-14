@@ -11,6 +11,6 @@ public interface ProductInfoRepository extends JpaRepository<ProductInfo,String>
     List<ProductInfo> findAll();
 
     //获取数据类型根据id
-    List<ProductInfo> findByCategoryTypeAaAndAndProductStatus(Integer typeId , Integer status);
+    List<ProductInfo> findByCategoryTypeAndProductStatus(Integer typeId , Integer status);
 
 }
