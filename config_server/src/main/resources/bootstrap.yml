@@ -5,5 +5,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/wuxinyuwxy/o2o_project
+          uri: https://github.com/wuxinyuwxy/o2o_project/blob
           search-paths: config-repo
