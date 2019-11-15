@@ -14,11 +14,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("buyer/product")
+@CrossOrigin
 public class BuyerProductController {
     @Autowired
     private ProductService productService;
 
-    @CrossOrigin
     @GetMapping("list")
     public ResponseVO<List<BuyeProductInfoVO>> selectBuyerFoods(){
         //查询数据  类型
