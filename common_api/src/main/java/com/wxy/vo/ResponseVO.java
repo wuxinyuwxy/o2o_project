@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class ResponseVO<T> { //泛型的使用
-    private int cord;
+    private int code;
     private String msg;
     private T data; //数据
 
@@ -12,7 +12,7 @@ public class ResponseVO<T> { //泛型的使用
     public static <T> ResponseVO success(T data){
         ResponseVO responseVO = new ResponseVO();
         responseVO.setData(data);
-        responseVO.setCord(CodeMsg.SUCCESS.getCord());
+        responseVO.setCode(CodeMsg.SUCCESS.getCord());
         responseVO.setMsg(CodeMsg.SUCCESS.getMsg());
         //泛型
         return responseVO;
@@ -22,7 +22,7 @@ public class ResponseVO<T> { //泛型的使用
     //失败
     public static <T> ResponseVO erro(CodeMsg codeMsg){
         ResponseVO responseVO = new ResponseVO();
-        responseVO.setCord(codeMsg.getCord());
+        responseVO.setCode(codeMsg.getCord());
         responseVO.setMsg(codeMsg.getMsg());
         //泛型
         return responseVO;

@@ -8,7 +8,9 @@ import com.wxy.service.ProductService;
 import com.wxy.util.DataTranferTool;
 import com.wxy.vo.BuyeProductInfoVO;
 import com.wxy.vo.FoodVO;
+import com.wxy.vo.ProductVO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -55,4 +57,5 @@ public class ProductServiceImpl implements ProductService {
 
         return buyeProductInfoVOS;
     }
+
 }
